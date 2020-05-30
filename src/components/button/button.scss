@@ -1,5 +1,29 @@
-.d{
-    h3{
-        color: deeppink;
+ 
+.btn{
+    border: 0px;
+    border-radius: 22px;
+    padding: 10px 22px; 
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+
+    &-red{
+        background-color: #EB5757;
+    }
+    
+    &-green{
+        background-color: #219653;
+    }
+
+    &-blue{
+        background-color: #2F80ED;
+    }
+
+    &:hover{
+        color: black;
     }
 }

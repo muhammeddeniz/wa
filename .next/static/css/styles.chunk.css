@@ -1,6 +1,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap");
-.d h3 {
-  color: deeppink; }
+.btn {
+  border: 0px;
+  border-radius: 22px;
+  padding: 10px 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer; }
+  .btn-red {
+    background-color: #EB5757; }
+  .btn-green {
+    background-color: #219653; }
+  .btn-blue {
+    background-color: #2F80ED; }
+  .btn:hover {
+    color: black; }
 
 .header {
   display: flex;

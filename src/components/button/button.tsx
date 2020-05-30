@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { Children } from 'react';
+import cx from 'classnames';
 
 import './button.scss';
 
+type Props = JSX.IntrinsicElements['button'] & {
+    red?: boolean;
+    green?: boolean;
+    blue?: boolean; 
+}
 
-const Button : React.FC<any> = () => {
+const Button : React.FC<Props> = ({
+    red,
+    green,
+    blue,
+    children,
+    ...rest
+}) => {
+
+    const btnClass = cx(
+        "btn",
+        {
+            "btn-red":  red,
+            "btn-green": green,
+            "btn-blue": blue
+        }
+
+    );
+
     return(
-        <div className="d">
-            <h3>button</h3>
-        </div>
+        <button className={btnClass} {...rest}>
+            {children}
+        </button>
     );
 }
 
