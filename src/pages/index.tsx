@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../components/index';
+import { Button, Input } from '../components/index';
 
 const Home: React.FC<any> = (props) => {
     return(
@@ -9,6 +9,7 @@ const Home: React.FC<any> = (props) => {
                 <Button red>Deneme</Button> 
                 <Button green >Deneme</Button> 
                 <Button blue >Deneme</Button> 
+                <Input /> 
             </div>
         </div>
     )

@@ -1,0 +1,32 @@
+.input-area{
+
+    &-title{
+        margin-bottom: 5px;      
+
+        text-transform: capitalize;
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .input-component{
+        border-radius: 4px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        
+        outline: none;
+        padding: 5px 10px;
+    
+        background: #FFFFFF; 
+    
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: box-shadow .3s;
+    
+        &:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.2); 
+            
+        }
+    }
+}
