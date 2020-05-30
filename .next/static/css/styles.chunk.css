@@ -1,6 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap");
 .d h3 {
   color: deeppink; }
 
+.header {
+  display: flex;
+  max-width: 1300px;
+  margin: auto; }
+  .header-logo p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold; }
+    .header-logo p span {
+      color: #3d5af1; }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; }
+    .header-nav p {
+      margin-left: 30px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      cursor: pointer; }
+      .header-nav p:hover {
+        color: #5d5d5a; }
 
 
 

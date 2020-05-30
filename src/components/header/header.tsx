@@ -8,8 +8,14 @@ interface IProps {
 
 const Header: React.FC<IProps> = ({store}) => {
     return(
-        <div>
-            <h1>header</h1>
+        <div className="header"> 
+            <div className="header-logo">
+                <p>working<span>-area</span></p>
+            </div>
+            <nav className="header-nav">
+                <p>ana sayfa</p>
+                <p>en çok çalışılanlar</p>
+            </nav>
         </div>
     );
 }
