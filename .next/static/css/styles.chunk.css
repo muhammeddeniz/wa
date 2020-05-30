@@ -60,4 +60,61 @@
   .input-area .input-component:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
 
+.card {
+  height: 18em;
+  width: 14em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff; }
+  .card:hover {
+    cursor: pointer; }
+    .card:hover .card-description {
+      height: 0em;
+      padding: 0px 1em; }
+    .card:hover .card-image {
+      height: 18em; }
+    .card:hover .card-social-icons {
+      background-color: white; }
+    .card:hover .card-social-icons:hover {
+      background-color: blue;
+      cursor: pointer; }
+
+.card-image {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: black; }
+
+.card-description {
+  background-color: #fafafc;
+  height: 12em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
