@@ -1,5 +1,5 @@
-.card {
-  height: 18em;
+.card1 {
+  height: 16em;
   width: 14em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,34 +17,32 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 16px;
   overflow: hidden;
-  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 
   &:hover {
     cursor: pointer;
 
-    .card-description {
+    .card1-description {
       height: 0em;
       padding: 0px 1em;
     }
 
-    .card-image {
+    .card1-image {
       height: 18em;
     }
 
-    .card-social-icons {
+    .card1-social-icons {
       background-color: white;
     }
 
-    .card-social-icons:hover {
+    .card1-social-icons:hover {
       background-color: blue;
       cursor: pointer;
     }
   }
 }
 
-.card-image {
+.card1-image {
   height: 6em;
   width: 14em;
   padding: 1em 2em;
@@ -57,7 +55,7 @@
   background-color: black;
 }
 
-.card-description {
+.card1-description {
   background-color: #fafafc;
   height: 12em;
   width: 14em;

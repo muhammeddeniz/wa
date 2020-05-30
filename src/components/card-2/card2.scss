@@ -1,0 +1,48 @@
+.card2{
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 14px;
+
+    color: white;
+    background-color: #4F4F4F;
+
+    display: flex;
+    padding-right: 50px;
+    padding-bottom: 20px;
+
+    &-leftside{
+
+        &-title{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 28px;
+        }
+
+        &-text{
+            width: 550px;
+            
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+        }
+    }
+
+
+    &-count{    
+        font-family: 'Open Sans', sans-serif;
+        font-size: 50px;
+
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &-buttons{
+        display: flex; 
+        flex-direction: column;
+        margin-left: auto;
+
+        Button{
+            margin-top: 20px;
+        }
+    }
+}

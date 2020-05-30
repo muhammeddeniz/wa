@@ -60,8 +60,8 @@
   .input-area .input-component:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
 
-.card {
-  height: 18em;
+.card1 {
+  height: 16em;
   width: 14em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,23 +75,21 @@
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 16px;
-  overflow: hidden;
-  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff; }
-  .card:hover {
+  overflow: hidden; }
+  .card1:hover {
     cursor: pointer; }
-    .card:hover .card-description {
+    .card1:hover .card1-description {
       height: 0em;
       padding: 0px 1em; }
-    .card:hover .card-image {
+    .card1:hover .card1-image {
       height: 18em; }
-    .card:hover .card-social-icons {
+    .card1:hover .card1-social-icons {
       background-color: white; }
-    .card:hover .card-social-icons:hover {
+    .card1:hover .card1-social-icons:hover {
       background-color: blue;
       cursor: pointer; }
 
-.card-image {
+.card1-image {
   height: 6em;
   width: 14em;
   padding: 1em 2em;
@@ -102,7 +100,7 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   background-color: black; }
 
-.card-description {
+.card1-description {
   background-color: #fafafc;
   height: 12em;
   width: 14em;
@@ -113,6 +111,36 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align: center; }
+
+.card2 {
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 14px;
+  color: white;
+  background-color: #4F4F4F;
+  display: flex;
+  padding-right: 50px;
+  padding-bottom: 20px; }
+  .card2-leftside-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px; }
+  .card2-leftside-text {
+    width: 550px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; }
+  .card2-count {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    margin-left: auto;
+    display: flex;
+    align-items: center; }
+  .card2-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; }
+    .card2-buttons Button {
+      margin-top: 20px; }
 
 * {
   -webkit-box-sizing: border-box;

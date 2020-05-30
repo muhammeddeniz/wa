@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Input, Card1 } from '../components/index';
+import { Button, Input, Card1, Card2 } from '../components/index';
 
 const Home: React.FC<any> = (props) => {
     return(
@@ -11,7 +11,7 @@ const Home: React.FC<any> = (props) => {
                 <Button blue >Deneme</Button> 
                 <Input /> 
                 <Card1></Card1>
-                
+                <Card2></Card2>
             </div>
         </div>
     )

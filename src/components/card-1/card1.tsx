@@ -9,14 +9,14 @@ type Props = JSX.IntrinsicElements["div"] & {
 const Card1: React.FC<Props> = ({ title, ...rest }) => {
   return (
  
-      <div className="card">
-        <div className="card-image">
-          <div className="card-image-title">
-            <h5>Card Title</h5>
+      <div className="card1">
+        <div className="card1-image">
+          <div className="card1-image-title">
+            <h5>Card1 Title</h5>
           </div>
         </div>
-        <div className="card-description">
-          <h5> Card Title </h5>
+        <div className="card1-description">
+          <h5> Card1 Title </h5>
           <p>
             Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More
             Bingo. Lorem Ipum doth be hard.
