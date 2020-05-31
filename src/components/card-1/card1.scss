@@ -1,9 +1,22 @@
+.bottom-arrow{
+  display: flex;
+  margin-left: 70px;
+  margin-top: 80px;
+
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+
 .card1 {
   height: 16em;
   width: 14em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  margin: 20px;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -35,11 +48,8 @@
       h1{
         text-align: start; 
         
-      }
-    }
-
-     
- 
+      } 
+    } 
   }
 }
 

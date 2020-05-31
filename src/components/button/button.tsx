@@ -7,6 +7,7 @@ type Props = JSX.IntrinsicElements['button'] & {
     red?: boolean;
     green?: boolean;
     blue?: boolean; 
+    input?: boolean;
 }
 
 const Button : React.FC<Props> = ({
@@ -14,6 +15,7 @@ const Button : React.FC<Props> = ({
     green,
     blue,
     children,
+    input,
     ...rest
 }) => {
 
@@ -22,9 +24,9 @@ const Button : React.FC<Props> = ({
         {
             "btn-red":  red,
             "btn-green": green,
-            "btn-blue": blue
-        }
-
+            "btn-blue": blue,
+            "btn-input": input
+        } 
     );
 
     return(

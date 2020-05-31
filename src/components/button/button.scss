@@ -1,29 +1,39 @@
- 
-.btn{
-    border: 0px;
-    border-radius: 22px;
-    padding: 10px 22px; 
-    
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    
-    color: #ffffff;
-    outline: none;
-    cursor: pointer;
+.btn {
+  border: 0px;
+  border-radius: 22px;
+  padding: 10px 22px;
 
-    &-red{
-        background-color: #EB5757;
-    }
-    
-    &-green{
-        background-color: #219653;
-    }
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 
-    &-blue{
-        background-color: #2F80ED;
-    }
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
 
-    &:hover{
-        color: black;
+  height: fit-content;
+
+  &-red {
+    background-color: #eb5757;
+  }
+
+  &-green {
+    background-color: #219653;
+  }
+
+  &-blue {
+    background-color: #2f80ed;
+  }
+
+  &-input {
+    background-color: #2f80ed;
+
+    &:hover {
+      border: 1px solid;
+      border-color: #000;
     }
+  }
+
+  &:hover {
+    color: black;
+  }
 }

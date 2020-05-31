@@ -3,17 +3,23 @@
   border: 0px;
   border-radius: 22px;
   padding: 10px 22px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #ffffff;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  height: fit-content; }
   .btn-red {
-    background-color: #EB5757; }
+    background-color: #eb5757; }
   .btn-green {
     background-color: #219653; }
   .btn-blue {
-    background-color: #2F80ED; }
+    background-color: #2f80ed; }
+  .btn-input {
+    background-color: #2f80ed; }
+    .btn-input:hover {
+      border: 1px solid;
+      border-color: #000; }
   .btn:hover {
     color: black; }
 
@@ -60,12 +66,20 @@
   .input-area .input-component:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
 
+.bottom-arrow {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 20px; }
+
 .card1 {
   height: 16em;
   width: 14em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -127,7 +141,9 @@
   background-color: #4F4F4F;
   display: flex;
   padding-right: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   .card2-leftside-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 28px; }
@@ -147,6 +163,47 @@
     margin-left: auto; }
     .card2-buttons Button {
       margin-top: 20px; }
+  .card2:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.55); }
+
+.home-new {
+  background-color: #F2C94C;
+  margin: 20px 50px;
+  border-radius: 16px;
+  padding: 30px 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .home-new-input {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-bottom: 70px; }
+    .home-new-input Button {
+      margin-left: 50px; }
+    .home-new-input-2 {
+      margin-left: 50px; }
+  .home-new-cards {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%; }
+
+.home-working {
+  margin-bottom: 300px;
+  margin-top: 140px; }
+  .home-working-title {
+    text-align: center; }
+    .home-working-title h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 23px;
+      margin-bottom: 10px; }
+    .home-working-title-underline {
+      height: 2px;
+      width: 100px;
+      background-color: #000;
+      display: flex;
+      margin: auto;
+      margin-top: 0px;
+      padding-top: 0;
+      margin-bottom: 40px; }
 
 * {
   -webkit-box-sizing: border-box;
