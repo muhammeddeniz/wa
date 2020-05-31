@@ -4,23 +4,24 @@ import "./card1.scss";
 
 type Props = JSX.IntrinsicElements["div"] & {
   title?: string;
+  text?: string;
+
 };
 
-const Card1: React.FC<Props> = ({ title, ...rest }) => {
+const Card1: React.FC<Props> = ({
+   title, 
+   text,
+   ...rest 
+  }) => {
   return (
  
       <div className="card1">
         <div className="card1-image">
-          <div className="card1-image-title">
-            <h5>Card1 Title</h5>
-          </div>
+          <h1>Çalışmaya Başla</h1>
         </div>
         <div className="card1-description">
-          <h5> Card1 Title </h5>
-          <p>
-            Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More
-            Bingo. Lorem Ipum doth be hard.
-          </p>
+          <h5> {title? title : "default"} </h5>
+          <p>{text? text : "fdsljkaf fsjda lkjfasldk lkjfasldklk jfasldklk jfasldklkjfasldk jlaf jlasdjlksafjl"}</p>
         </div>
       </div>
  

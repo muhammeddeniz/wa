@@ -29,23 +29,25 @@
 
     .card1-image {
       height: 18em;
+      color: #fff;
+      font-size: 20px;
+      
+      h1{
+        text-align: start; 
+        
+      }
     }
 
-    .card1-social-icons {
-      background-color: white;
-    }
-
-    .card1-social-icons:hover {
-      background-color: blue;
-      cursor: pointer;
-    }
+     
+ 
   }
 }
 
 .card1-image {
   height: 6em;
   width: 14em;
-  padding: 1em 2em;
+  padding: 1em 1em;
+
   position: Absolute;
   top: 0px;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -66,4 +68,17 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align: center;
+
+  h5{
+    font-size: 18px;
+    text-transform: capitalize;
+
+    
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  p{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+  }
 }

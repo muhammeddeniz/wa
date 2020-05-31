@@ -82,17 +82,16 @@
       height: 0em;
       padding: 0px 1em; }
     .card1:hover .card1-image {
-      height: 18em; }
-    .card1:hover .card1-social-icons {
-      background-color: white; }
-    .card1:hover .card1-social-icons:hover {
-      background-color: blue;
-      cursor: pointer; }
+      height: 18em;
+      color: #fff;
+      font-size: 20px; }
+      .card1:hover .card1-image h1 {
+        text-align: start; }
 
 .card1-image {
   height: 6em;
   width: 14em;
-  padding: 1em 2em;
+  padding: 1em 1em;
   position: Absolute;
   top: 0px;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -111,6 +110,13 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align: center; }
+  .card1-description h5 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif; }
+  .card1-description p {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize; }
 
 .card2 {
   padding: 10px 20px;
