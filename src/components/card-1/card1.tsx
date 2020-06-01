@@ -9,7 +9,7 @@ type Props = JSX.IntrinsicElements["div"] & {
 
 const Card1: React.FC<Props> = ({ title, text, ...rest }) => {
   return (
-    <div className="card1">
+    <div className="card1" {...rest}>
       <div className="card1-image">
         <h1>Çalışmaya Başla</h1>
         <img className="bottom-arrow" src="/bottom.svg" alt="" />

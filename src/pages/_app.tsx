@@ -4,7 +4,11 @@ import Head from "next/head";
 import link from 'next/link';
 import { Header } from '../components/index';
 
+import Store from '../store/store';
+
 import "../styles/index.scss";
+
+const store = new Store();
 
 class MyApp extends App {
   render() {
@@ -22,10 +26,9 @@ class MyApp extends App {
           <title>Ana Sayfa</title>
         </Head>
           <Header />
-
-          <div className='myBody' lang="tr">
-            <Component {...pageProps}  />
-          </div>
+ 
+            <Component {...pageProps}  myStore={store} />
+ 
 
           {/* <Footer /> */}
       </>

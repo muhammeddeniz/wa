@@ -1,8 +1,13 @@
 import React from 'react';
 
 import { Button, Input, Card1, Card2 } from '../components/index';
+ 
 
-const Home: React.FC<any> = (props) => {
+interface IProps {
+    myStore: any;
+}
+
+const Home: React.FC<any> = ({myStore}) => {
     return(
         <div className="home">
             <div className="home-new">
@@ -13,19 +18,25 @@ const Home: React.FC<any> = (props) => {
                     <Input width={400} title="Neler yapılacak"/>
                     </div>
                     <Button input>EKLE</Button>
-                </div>
-
+                </div> 
                 <div className="home-new-cards">
-                    <Card1 />
-                    <Card1 />
-                    <Card1 />
-                    <Card1 />
-                    <Card1 />
-                    <Card1 />
-                    <Card1 />
-                    <Card1 />
-                </div>
-
+                    {
+                        myStore.cards.map(index => {
+                            return(
+                                <div>
+                                    {
+                                        <Card1 
+                                        onClick={() => {
+                                            console.log(index.title);
+                                            
+                                        }}
+                                        title={index.title} text={index.text} />    
+                                    }
+                                </div>
+                            )
+                        })
+                    }
+                </div> 
             </div>
 
             <div className="home-working">
