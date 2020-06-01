@@ -34,13 +34,13 @@ const Home: React.FC<any> = ({myStore}) => {
                 </div> 
                 <div className="home-new-cards">
                     {
-                        myStore.cards.map(index => {
+                        myStore.cards.map((index, key) => {
                             return(
-                                <div>
+                                <div key={key}>
                                     {
                                         <Card1 
                                         onClick={() => {
-                                            console.log(index.title);
+                                            myStore.addWorking({title: index.title, text: index.text, count: 0})
                                             
                                         }}
                                         title={index.title} text={index.text} />    
@@ -57,7 +57,19 @@ const Home: React.FC<any> = ({myStore}) => {
                     <h2>Şu an çalışılıyor</h2>
                     <div className="home-working-title-underline"></div>
                 </div>
-                    <Card2 />
+                    {
+                        myStore.working.map((index, key) => {
+                            return(
+                                <div key={key} className="home-working-new">
+                                    <Card2 
+                                    title={index.title}
+                                    desc={index.text}
+                                    count= {index.count}
+                                    />
+                                </div>
+                            )
+                        })
+                    }
             </div>
         </div>
     )

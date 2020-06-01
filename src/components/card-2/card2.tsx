@@ -18,7 +18,7 @@ const Card2: React.FC<Props> = ({ title,  desc, count, ...rest }) => {
         <p className="card2-leftside-text">{desc ? desc : "default"}</p>
       </div>
 
-        <p className="card2-count">{count ? count: "12.45"} dk</p>
+        <p className="card2-count">{count ? count: "00.00"} dk</p>
 
         <div className="card2-buttons">
             <Button blue>Durdur</Button>
