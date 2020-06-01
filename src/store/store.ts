@@ -20,11 +20,11 @@ class Store {
     working : [{
         title: string,
         text: string
-        count: number;
+        timerStart: boolean;
     },[]] = [{
         title: "muhammed",
         text: "denie",
-        count: 12,
+        timerStart: false,
     } ];
     
     @action
