@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import {observer} from 'mobx-react';
 import { Button, Input, Card1, Card2 } from '../components/index';
  
 
@@ -8,16 +8,29 @@ interface IProps {
 }
 
 const Home: React.FC<any> = ({myStore}) => {
+
+    const [inTitle, setinTitle] = useState("");
+    const [inText, setinText] = useState("");
+    
     return(
         <div className="home">
             <div className="home-new">
                 
                 <div className="home-new-input">
-                    <Input title="Yapılacak iş ismi"/>
+                    <Input
+                    onChange={(e) => setinTitle(e.target.value)}
+                    title="Yapılacak iş ismi"/>
                     <div className="home-new-input-2">
-                    <Input width={400} title="Neler yapılacak"/>
+                    <Input
+                        onChange={(e) => setinText(e.target.value)}
+                    width={400} title="Neler yapılacak"/>
                     </div>
-                    <Button input>EKLE</Button>
+                    <Button
+                    onClick={() => {
+                        myStore.ekle({title: inTitle, text: inText})
+                        console.log("denem");             
+                    }}
+                    input>EKLE</Button>
                 </div> 
                 <div className="home-new-cards">
                     {
@@ -50,4 +63,4 @@ const Home: React.FC<any> = ({myStore}) => {
     )
 }
 
-export default Home;
+export default observer(Home);
