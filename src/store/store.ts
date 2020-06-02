@@ -8,24 +8,14 @@ class Store {
     }[] = [{
         title: "denem",
         text: "deneme"
-    },
-    {
-        title: "fdas",
-        text: "deneme"
     }];
-
-
-
+ 
     @observable
     working : {
         title: string,
         text: string
         timerStart: boolean;
-    }[] = [{
-        title: "muhammed",
-        text: "denie",
-        timerStart: false,
-    } ];
+    }[] = [];
     
     @action
     ekle = (yeni: any) => {

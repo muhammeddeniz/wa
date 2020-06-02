@@ -57,7 +57,7 @@ const Home: React.FC<any> = ({myStore}) => {
                     <div className="home-working-title-underline"></div>
                 </div>
                     {
-                        myStore.working.map((index, key) => {
+                        myStore.working?.map((index, key) => {
                             return(
                                 <div key={key} className="home-working-new">
                                     <Card2 

@@ -11,7 +11,7 @@ type Props = JSX.IntrinsicElements["div"] & {
 };
 
 const Card2: React.FC<Props> = ({ title, timerStart, desc, ...rest }) => {
-  const [timer, setTimer] = useState(57);
+  const [timer, setTimer] = useState(0);
 
   const [sa, setSa] = useState(0);
   const [dk, setDk] = useState(0); 
