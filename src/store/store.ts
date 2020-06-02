@@ -32,6 +32,11 @@ class Store {
         this.cards.push(yeni);
     };
 
+    @action
+    cardsDelete = (deleteCard: any) => {
+        console.log(this.cards);
+        this.cards.splice(deleteCard,1);
+    }
     @action 
     addWorking = (yeni: any) => {
         this.working.push(yeni);

@@ -5,11 +5,15 @@ import "./card1.scss";
 type Props = JSX.IntrinsicElements["div"] & {
   title?: string;
   text?: string;
+  deleteItem?: any;
 };
 
-const Card1: React.FC<Props> = ({ title, text, ...rest }) => {
+const Card1: React.FC<Props> = ({ title, text, deleteItem, ...rest}) => {
   return (
     <div className="card1" {...rest}>
+      <div className="card1-delete"
+      onClick={() => deleteItem}
+      ></div>
       <div className="card1-image">
         <h1>Çalışmaya Başla</h1>
         <img className="bottom-arrow" src="/bottom.svg" alt="" />

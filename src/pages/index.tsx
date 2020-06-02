@@ -40,8 +40,7 @@ const Home: React.FC<any> = ({myStore}) => {
                                     {
                                         <Card1 
                                         onClick={() => {
-                                            myStore.addWorking({title: index.title, text: index.text, timerStart: true})
-                                            
+                                            myStore.addWorking({title: index.title, text: index.text, timerStart: true}) 
                                         }}
                                         title={index.title} text={index.text} />    
                                     }

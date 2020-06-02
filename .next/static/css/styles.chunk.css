@@ -92,6 +92,15 @@
   overflow: hidden; }
   .card1:hover {
     cursor: pointer; }
+    .card1:hover .card1-delete {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: red;
+      z-index: 1;
+      position: relative;
+      right: -185px;
+      top: 8px; }
     .card1:hover .card1-description {
       height: 0em;
       padding: 0px 1em; }
