@@ -2,10 +2,10 @@ import { observable, action } from 'mobx';
 
 class Store {
     @observable
-    cards : [{
+    cards : {
         title: string,
         text: string
-    },[]] = [{
+    }[] = [{
         title: "denem",
         text: "deneme"
     },
@@ -17,11 +17,11 @@ class Store {
 
 
     @observable
-    working : [{
+    working : {
         title: string,
         text: string
         timerStart: boolean;
-    },[]] = [{
+    }[] = [{
         title: "muhammed",
         text: "denie",
         timerStart: false,
