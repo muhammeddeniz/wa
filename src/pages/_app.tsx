@@ -11,7 +11,6 @@ import "../styles/index.scss";
 const store = new Store();
 
 class MyApp extends App {
-  props: { Component: any; pageProps: any };
   render() {
     const { Component, pageProps } = this.props;
 
