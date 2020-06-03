@@ -12,9 +12,10 @@
     <p>
     <a href="https://github.com/muhammeddeniz/working-area/issues">Tavsiyeler</a>
   </p>
+  <h3>Kurulum</h3>
 </p 
  
-<h3>Kurulum</h3>
+
  
 1. Projeyi Klonlayın
 ```sh
