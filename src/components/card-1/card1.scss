@@ -1,17 +1,15 @@
-.bottom-arrow{
+.bottom-arrow {
   display: flex;
-  margin-left: 70px;
-  margin-top: 80px;
+  margin-left: 60px;
+  margin-top: 60px;
 
   font-weight: bold;
   font-size: 20px;
-
 }
 
-
 .card1 {
-  height: 16em;
-  width: 14em;
+  height: 200px;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,17 +29,15 @@
   border-radius: 16px;
   overflow: hidden;
 
-  
-
   &:hover {
     cursor: pointer;
 
-    .card1-delete{
+    .card1-delete {
       width: 30px;
       height: 30px;
       border-radius: 50%;
       background-color: red;
-      
+
       z-index: 1;
 
       position: relative;
@@ -55,22 +51,26 @@
     }
 
     .card1-image {
-      height: 18em;
+      height: 100%;
+      width: 100%;
       color: #fff;
       font-size: 20px;
-      
-      h1{
-        text-align: start; 
-        
-      } 
-    } 
+
+      h1 {
+        text-align: start;
+        font-size: 34px;
+
+        position: relative;
+        left: -4px;
+      }
+    }
   }
 }
 
 .card1-image {
-  height: 6em;
-  width: 14em;
-  padding: 1em 1em;
+  height: 90%;
+  width: 100%;
+  padding: 10px 10px;
 
   position: Absolute;
   top: 0px;
@@ -79,12 +79,19 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   background-color: black;
+
+  h1 {
+    font-size: 34px;
+
+    position: relative;
+    left: -4px;
+  }
 }
 
 .card1-description {
   background-color: #fafafc;
-  height: 12em;
-  width: 14em;
+  height: 150px;
+  width: 100%;
   position: absolute;
   bottom: 0em;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -93,16 +100,15 @@
   padding: 0.5em 1em;
   text-align: center;
 
-  h5{
+  h5 {
     font-size: 18px;
     text-transform: capitalize;
 
-    
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 
-  p{
-    font-family: 'Open Sans', sans-serif;
+  p {
+    font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
   }
 }

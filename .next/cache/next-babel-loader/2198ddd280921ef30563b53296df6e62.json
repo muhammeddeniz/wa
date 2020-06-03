@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default as Card1 } from './card1';","map":{"version":3,"sources":["C:/Users/muham/Desktop/working-area/src/components/card-1/index.ts"],"names":["default","Card1"],"mappings":"AAAA,SAASA,OAAO,IAAIC,KAApB,QAAiC,SAAjC","sourcesContent":["export { default as Card1 } from './card1';"]},"metadata":{},"sourceType":"module"}
