@@ -14,25 +14,23 @@ const Card2: React.FC<Props> = ({ title, timerStart, desc, ...rest }) => {
   const [timer, setTimer] = useState(0);
 
   const [sa, setSa] = useState(0);
-  const [dk, setDk] = useState(0); 
+  const [dk, setDk] = useState(0);
   const [stopCount, setStopCount] = useState(true);
-  
- 
+
   stopCount
-  ? setTimeout(() => {
-      if (timer === 60) {
-        setTimer(0);
-        setDk(dk + 1);
-      } else {
-        setTimer(timer + 1);
-      }
-      if (dk === 60) {
-        setDk(0);
-        setSa(sa + 1);
-      }
-    }, 1000)
-  : console.log("nothing");
- 
+    ? setTimeout(() => {
+        if (timer >= 60) {
+          setTimer(0);
+          setDk(dk + 1);
+        } else {
+          setTimer(timer + 1);
+        }
+        if (dk >= 60) {
+          setDk(0);
+          setSa(sa + 1);
+        }
+      }, 1000)
+    : console.log("nothing");
 
   return (
     <div className="card2">
@@ -46,20 +44,24 @@ const Card2: React.FC<Props> = ({ title, timerStart, desc, ...rest }) => {
       </p>
 
       <div className="card2-buttons">
-        <Button blue
-        onClick={() => setStopCount(false)}
-        >Durdur</Button>
-        <Button green
-        onClick={() => setStopCount(true)}
-        >Devam</Button>
-        <Button red
-        onClick={() => {
-          setTimer(0);
-          setStopCount(false);
-          setDk(0);
-          setSa(0);
-        }}
-        >Sıfırla</Button>
+        <Button blue onClick={() => setStopCount(false)}>
+          Durdur
+        </Button>
+        <Button green onClick={() => setStopCount(true)}>
+          Devam
+        </Button>
+        <Button
+          red
+          onClick={() => {
+            setStopCount(false);
+            clearTimeout();
+            setTimer(0);
+            setDk(0);
+            setSa(0);
+          }}
+        >
+          Sıfırla
+        </Button>
       </div>
     </div>
   );

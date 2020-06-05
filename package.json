@@ -1,6 +1,10 @@
 {
-  "name": "sifre-yonetici",
+  "name": "working-area",
   "version": "0.1.0",
+  "author": {
+    "name": "Muhammed Deniz",
+    "email": "muhammeddenizcs@gmail.com"
+  },
   "private": true,
   "dependencies": {
     "@babel/preset-es2015": "^7.0.0-beta.53",
