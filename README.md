@@ -33,7 +33,10 @@ yarn
 yarn dev
 ```
 
-http://localhost:3000/ adresinden projeye ulaşabilirsiniz 
+### **Screens**
+![alt text](https://github.com/muhammeddeniz/wa/blob/master/screens/1.png)
+<br /> 
+![alt text](https://github.com/muhammeddeniz/wa/blob/master/screens/2.png)
 
 
 ## Lisans
