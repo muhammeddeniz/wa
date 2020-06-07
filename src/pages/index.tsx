@@ -9,6 +9,7 @@ interface IProps {
 const Home: React.FC<any> = ({ myStore }) => {
   const [inTitle, setinTitle] = useState("");
   const [inText, setinText] = useState("");
+  const [storeSize, setStoreSize] = useState(1);
 
   return (
     <div className="home">
@@ -27,7 +28,10 @@ const Home: React.FC<any> = ({ myStore }) => {
           </div>
           <Button
             onClick={() => {
-              myStore.ekle({ title: inTitle, text: inText });
+              storeSize <= 9
+                ? myStore.ekle({ title: inTitle, text: inText })
+                : alert("Yeterince İş Eklendi.");
+              setStoreSize(storeSize + 1);
             }}
             input
           >
@@ -40,6 +44,8 @@ const Home: React.FC<any> = ({ myStore }) => {
               <div key={key}>
                 {
                   <Card1
+                    data={index}
+                    store={myStore}
                     onClick={(e: any) => {
                       let control;
                       myStore.working.forEach((element) => {
