@@ -5,6 +5,8 @@ import "./card1.scss";
 type Props = JSX.IntrinsicElements["div"] & {
   title?: string;
   text?: string;
+  data?: any;
+  store?: any;
 };
 
 const Card1: React.FC<Props> = ({ title, text, ...rest }) => {
